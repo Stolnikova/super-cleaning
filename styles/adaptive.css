@@ -1,0 +1,105 @@
+/* ================================================
+   АДАПТИВ — хедер, герой, картки
+   @import 'components/adaptive.css'; — останнім в index.css
+   ================================================ */
+
+@media (max-width: 1400px) {
+
+  /* ===== HEADER ===== */
+  header { font-size: 16px; }
+
+  .logo-item-img { padding-left: 16px; padding-top: 6px; gap: 8px; }
+  .logo-img      { width: 56px; }
+  .logo-text     { width: 70px; }
+
+  .nav-center        { margin: 0 8px; white-space: nowrap; }
+  .nav-border-group  { height: 40px; }
+
+  .btn-call { font-size: 16px; padding: 6px 14px; white-space: nowrap; letter-spacing: 0; }
+
+  .location     { padding-right: 16px; font-size: 16px; gap: 4px; }
+  .location-img { width: 15px; }
+
+  /* ===== HERO ===== */
+  .hero           { padding: 10px 24px; overflow: hidden; }
+  .hero-content   { width: 33%; flex-shrink: 0; gap: 12px; }
+  .hero-img-block { width: 67%; flex-shrink: 0; }
+  .hero-title     { font-size: 48px; }
+  .hero-text      { font-size: 14px; width: 100%; margin-bottom: 20px; }
+  .hero-btn       { font-size: 18px; padding: 8px 20px; white-space: nowrap; }
+
+  /* ===== INFORM CARDS ===== */
+  .card-title { font-size: 16px; }
+  .card-hover { font-size: 13px; line-height: 1.5; padding: 14px; }
+
+  /* ===== SERVICE CARDS ===== */
+
+  /* Відстань між карточками і калькулятором */
+  .service-container {
+    gap: 24px;
+  }
+
+  /* Однакові відступи зліва і справа від сітки карток */
+  .service-container-cards {
+    align-items: stretch;
+    width: 100%;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* Картка — однакові відступи з усіх боків */
+  .service-card {
+    height: 100%;
+    padding: 10px;
+    min-width: 0; /* не дає картці розширюватись від контенту */
+  }
+
+  /* Зображення однакової висоти */
+  .service-card-img {
+    height: 90px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* Ціна — менший шрифт, перенос дозволений але картка не росте */
+  .service-card-price {
+    font-size: 12px;
+  }
+
+  /* Назва — фіксована висота, текст притиснутий до лінії знизу */
+  .service-card-title {
+    min-height: 48px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-bottom: 4px;
+    font-size: 12px;
+  }
+
+  /* ===== OVERLAY (активна картка) ===== */
+
+  /* Симетричні відступи всередині */
+  .service-card-overlay {
+    padding: 16px 12px;
+    gap: 10px;
+  }
+
+  /* Лічильник — зверху, однакова відстань */
+  .service-quantity {
+    align-self: center;
+    flex-shrink: 0;
+  }
+
+  /* Назва в overlay — фіксована висота як в звичайній картці */
+  .overlay-title {
+    min-height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .overlay-price {
+    text-align: center;
+  }
+}
