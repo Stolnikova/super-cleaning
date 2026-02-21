@@ -1,0 +1,35 @@
+
+/* Базові стилі для всіх кнопок */
+.btn {
+  padding: 7px 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 23px;
+  transition: all 0.3s ease;
+  border: none;
+  display: inline-block;
+}
+
+.hero-btn{
+  font-size: 26px;
+  padding: 10px 28px;
+  border-radius: 29px;
+}
+
+
+.btn-primary {
+  background: linear-gradient(135deg, #4da9a1 0%, #2e7d75 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(77, 169, 161, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(77, 169, 161, 0.4);
+  filter: brightness(1.1);
+}
+
+.btn-contact{
+  padding: 10px;
+  font-size: 20px;
+}

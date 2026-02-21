@@ -1,0 +1,45 @@
+.informCards{
+  background-color: #E0F2F1;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 70px 200px;
+  gap: 15px;
+}
+
+.card-title{
+  text-align: center;
+}
+
+.card{
+  width: 25%;
+  background-color: var( --color-white);
+  border-radius: 10px;
+  padding: 25px 20px ;
+  position: relative;
+  overflow: hidden;
+
+  &:hover .card-hover{
+    opacity: 1;
+  }
+}
+
+.card-hover {
+  position: absolute;
+  inset: 0;
+  background: #4DB6AC;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+
+  opacity: 0;
+  transition: 0.4s;
+  font-size: 18px;
+}
+

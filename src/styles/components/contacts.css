@@ -1,0 +1,97 @@
+.contacts {
+  padding: 80px 250px;
+  background-color: var(--color-white);
+}
+
+.contacts-body {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background:  #E0F2F1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: #00897B;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-label {
+  font-size: 12px;
+  color: #6b8a87;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.contact-value {
+  font-size: 16px;
+  font-weight: 600;
+  color:  #02413a;
+}
+
+/* Форма */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid #d0e8e6;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #fafefe;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #a0b8b6;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color:  #00897B;
+  box-shadow: 0 0 0 3px rgba(0,137,123,0.1);
+}
+
+.form-textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+

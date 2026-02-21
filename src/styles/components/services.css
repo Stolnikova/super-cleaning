@@ -1,0 +1,177 @@
+.services {
+  background-color: var(--color-white);
+  padding: 70px 200px;
+}
+
+.service-main-title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.service-container {
+  display: flex;
+}
+
+.service-card {
+  background-color: #E0F2F1;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &:hover {
+    background-color: var(--color-white);
+  }
+
+  &:hover .add-info {
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.service-title {
+  margin: 30px 0;
+  border-bottom: #00897B solid 1px;
+  width: 90%;
+}
+
+.service-container-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 90%;
+}
+
+.service-card-price {
+  color: #02413a;
+  font-weight: bold;
+}
+
+.service-card-title {
+  border-bottom: 1px solid #00897B;
+  margin-top: auto;
+  padding-bottom: 4px;
+}
+
+.service-card-img {
+  width: 100%;
+}
+
+
+.calculator {
+  border-radius: 10px;
+  border: 2px solid #00897B;
+  padding: 15px;
+  width: 80%;
+  min-height: 250px;
+  max-height: 420px;
+  position: sticky;
+  top: 120px;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.add-info {
+  font-size: 12px;
+  color: #555;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+
+.calculator p:first-child {
+  font-size: 18px;
+  color: #555;
+}
+
+.calculator p:nth-child(2) {
+  font-size: 32px;
+  font-weight: bold;
+  color: #02413a;
+}
+
+.calculator p:nth-child(3) {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.calculator p:nth-child(3) span {
+  display: block;
+}
+
+.calc-btn{
+  margin-top: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.service-card-overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  background-color: #00897B;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px;
+}
+
+.service-card.active .service-card-overlay {
+  display: flex;
+}
+
+.service-quantity {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 6px 16px;
+}
+
+.service-quantity button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.service-quantity span {
+  color: white;
+  font-size: 18px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.overlay-title {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.overlay-price {
+  color: #E0F2F1;
+  font-weight: bold;
+  font-size: 16px;
+}

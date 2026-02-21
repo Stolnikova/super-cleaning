@@ -1,0 +1,16 @@
+:root {
+  --color-dark-blue-1: rgb(3, 8, 47);
+  --color-dark-blue-2: rgb(6, 32, 75);
+  --color-dark-blue-3: rgb(29, 60, 120);
+
+  --color-light-blue-1: rgb(44, 109, 178);
+  --color-light-blue-2: rgb(26, 122, 158);
+  --color-light-blue-3: rgb(66, 147, 180);
+  --color-light-blue-4: rgb(105, 174, 191);
+
+  --color-white: rgb(255, 252, 252);
+
+  --color-grey-1: rgb(161, 193, 223);
+  --color-grey-2: rgb(201, 229, 241);
+  --color-grey-3: rgb(79, 101, 125);
+}

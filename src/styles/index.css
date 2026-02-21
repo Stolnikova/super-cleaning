@@ -1,0 +1,15 @@
+@import 'normalize.css';
+@import 'variables.css';
+@import 'fonts.css';
+@import 'globals.css';
+
+@import 'components/buttons.css';
+@import 'components/header.css';
+@import 'components/hero-section.css';
+@import 'components/aboutUs.css';
+@import 'components/informCards.css';
+@import 'components/services.css';
+@import 'components/reviews.css';
+@import 'components/contacts.css';
+@import 'components/footer.css';
+@import 'components/modal.css';
